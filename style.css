@@ -1,0 +1,1945 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#main {
+    height: 100vh;
+    width: 100%;
+    background-image: url('images/bg_1.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.social-accounts {
+    width: 92%;
+    height: 2vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1vh;
+    /* Adjusted */
+    position: absolute;
+}
+
+.emailandphone {
+    font-size: 0.8vw;
+    font-weight: 600;
+    margin-left: 8.8vw;
+    color: black;
+}
+
+.emailandphone .hover-effect {
+    cursor: pointer;
+    color: grey;
+}
+
+#icons li {
+    font-size: 19px;
+    background-color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    list-style-type: none;
+    margin-left: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    margin-top: 9px;
+    text-align: center;
+}
+
+#icons li a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#icons li:hover {
+    background-color: rgb(253, 76, 130);
+    transition: all ease-in-out;
+    color: white;
+    cursor: pointer;
+}
+
+#icons {
+    display: flex;
+    flex-direction: column;
+}
+
+ul {
+    display: flex;
+}
+
+/* Navbar starts here */
+#navbar {
+    width: 84%;
+    background-color: white;
+    margin: 45px auto;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 2vw;
+    flex-wrap: wrap;
+}
+
+#navbar-ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#navbar-ul ul {
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+#navbar-ul ul li {
+    list-style: none;
+    padding: 0 1vw;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+#navbar-ul ul li:hover {
+    color: rgb(253, 76, 130);
+    cursor: pointer;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    cursor: pointer;
+}
+
+.logo p {
+    color: rgb(253, 76, 130);
+    font-weight: 600;
+}
+
+.free-consultation {
+    background-color: rgb(253, 76, 130);
+    padding: 1.5vw 1.5vw;
+    color: white;
+    font-size: 1.1vw;
+    font-weight: 600;
+}
+
+.free-consultation:hover {
+    color: black;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.menu i {
+    display: none;
+}
+
+/* Content starts here */
+#content {
+    margin-top: 2.2vw;
+    text-align: center;
+    display: flex;
+    align-items: flex-start;
+    margin-left: 4vw;
+    flex-direction: column;
+}
+
+#content p {
+    margin-left: 4vw;
+    margin-top: 1.3vw;
+    line-height: 30px;
+    font-weight: 600;
+    color: grey;
+    text-align: center;
+    width: 55%;
+}
+
+#content p span {
+    display: inline-block;
+    margin-right: 4.8vw;
+}
+
+#content h1 {
+    font-size: 3vw;
+    color: black;
+    font-size: 4.3vw;
+}
+
+#content h1 span {
+    display: inline-block;
+    margin-left: 4vw;
+}
+
+.buttons {
+    display: flex;
+    margin-left: 4vw;
+    margin-top: 2vw;
+    justify-content: space-between;
+    gap: 1vw;
+}
+
+.button1 {
+    padding: 1.3vw 2.2vw;
+    background-color: rgb(253, 76, 130);
+    border-radius: 8px;
+    color: white;
+}
+
+.button1:hover {
+    cursor: pointer;
+}
+
+.button2 {
+    border-radius: 8px;
+    padding: 1.3vw 2vw;
+    background-color: rgb(145, 194, 53);
+    color: white;
+    font-weight: 600;
+    border: 1px solid rgb(145, 194, 53);
+}
+
+.button2:hover {
+    background: none;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+    border: 1px solid rgb(145, 194, 53);
+    color: rgb(145, 194, 53);
+}
+
+#services {
+    margin-top: 5vw;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.veterinary {
+    padding: 3vw 2vw;
+    background-color: white;
+    display: flex;
+    gap: 2vw;
+    align-items: center;
+}
+
+.veterinary:hover {
+    background-color: rgb(253, 76, 130);
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;
+    color: white;
+}
+
+.veterinary i {
+    font-size: 5vw;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1vw;
+}
+
+.s1 {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.s2 {
+    bottom: 60%;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+/* second-page starts here */
+#second-page {
+    width: 100%;
+    height: 130vh;
+    background-color: rgb(248, 249, 250);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 9vw;
+    background-size: cover;
+}
+
+.picture {
+    margin-top: 18vw;
+    width: 100%;
+    height: 73%;
+    background-image: url('images/about.jpg.webp');
+    background-size: cover;
+    margin-left: 10vw;
+}
+
+.some-text {
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+    margin-top: 20vh;
+    /* Adjusted */
+}
+
+.some-text p {
+    font-size: 1vw;
+    color: rgb(253, 76, 130);
+    font-weight: 600;
+}
+
+.some-text h1 {
+    font-size: 42px;
+}
+
+.second-page-text {
+    line-height: 25px;
+    margin-top: 0.9vw;
+    font-size: 1.3vw;
+    color: #999999;
+    font-weight: 600;
+    width: 60%;
+}
+
+.second-page-ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+    margin-top: 1vw;
+}
+
+.second-page-ul li i {
+    padding: 12px 12px;
+    background-color: rgb(253, 76, 130);
+    border-radius: 7px;
+    font-size: 16px;
+    color: white;
+}
+
+.second-page-ul li span {
+    margin-left: 19px;
+    font-weight: 600;
+}
+
+.second-page-ul li {
+    list-style-type: none;
+}
+
+/* THIRD PAGE STARTS HERE */
+#third-page {
+    height: 48vh;
+    width: 100%;
+    background-size: cover;
+    margin-top: 2px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.appointment {
+    margin-top: 65px;
+    font-size: 15px;
+    font-weight: 600;
+    color: rgb(253, 76, 130);
+    text-align: center;
+}
+
+#inputs {
+    margin-top: 3vw;
+    width: 87vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#inputs2 {
+    margin-top: 3vw;
+    width: 87vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#inputs input,
+#inputs select {
+    flex: 1;
+    max-width: 23%;
+    margin: 0 10px;
+    padding: 19px 5vw 19px 10px;
+    background-color: white;
+    border: 1px solid black;
+}
+
+#inputs2 input {
+    flex: 1;
+    max-width: 23%;
+    margin: 0 10px;
+    padding: 19px 5vw 19px 10px;
+    border: 1px solid black;
+}
+
+#inputs input::placeholder {
+    font-size: 16px;
+    color: rgb(147, 149, 151);
+    font-weight: 600;
+}
+
+#inputs2 input::placeholder {
+    font-size: 17px;
+    color: rgb(147, 149, 151);
+    font-weight: 600;
+}
+
+.xyz {
+    flex: 1;
+    max-width: 23%;
+    margin: 0 10px;
+    padding: 19px 3vw 19px 17px;
+    background-color: rgb(145, 194, 53);
+    border-radius: 9px;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    font-weight: normal;
+    border: 1px solid rgb(145, 194, 53);
+}
+
+.xyz:hover {
+    background: none;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+    border: 1px solid rgb(145, 194, 53);
+    color: rgb(145, 194, 53);
+}
+
+#select {
+    font-size: 16px;
+    color: rgb(147, 149, 151);
+    font-weight: 600;
+}
+
+#select option {
+    font-size: 16px;
+    color: rgb(147, 149, 151);
+    font-weight: 600;
+}
+
+/* FOURTH PAGE STARTS HERE */
+#fourth-page {
+    height: 90vh;
+    width: 100%;
+    background-color: rgb(248, 249, 250);
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.smtext {
+    width: auto;
+    text-align: center;
+    font-size: 15px;
+    color: rgb(253, 76, 130);
+    font-weight: 600;
+    margin-top: 5%;
+}
+
+.lgtext {
+    width: auto;
+    text-align: center;
+    font-size: 15px;
+    color: black;
+    font-weight: 600;
+    margin-top: 1%;
+    font-size: 39px;
+}
+
+#our-groomers {
+    width: 95%;
+    height: 55%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 3vw;
+    margin-left: 1vw;
+}
+
+.cart {
+    height: 260px;
+    width: 225px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5vw;
+}
+
+.cart:hover {
+    background-color: rgb(145, 194, 53);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    color: white;
+}
+
+.image {
+    height: 160px;
+    width: 72%;
+    background-color: yellow;
+    margin-top: -25%;
+    border: 10px solid rgb(248, 249, 250);
+    border-radius: 50%;
+    background-image: url('images/doc-1.jpg.webp');
+    background-size: cover;
+}
+
+h5 {
+    font-size: 11px;
+    color: rgb(253, 76, 130);
+    font-weight: 600;
+}
+
+#cart-ul {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 8px;
+}
+
+#cart-ul li {
+    list-style-type: none;
+    padding: 0.3vw 0.5vw;
+    color: white;
+    background-color: rgb(253, 76, 130);
+    border-radius: 7px;
+}
+
+/* page-five starts here! */
+
+#page-five {
+    position: relative;
+    background-image: url("images/bg_3.jpg.webp");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#page-five::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(247, 105, 148, 0.8);
+    z-index: 1;
+}
+
+#page-five>* {
+    position: relative;
+    z-index: 2;
+}
+
+.h3 {
+    font-size: 12px;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+    margin-top: 6.4vw;
+    color: white;
+}
+
+.h1 {
+    font-size: 39px;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+    margin-top: 2vw;
+    color: white;
+    font-weight: bolder;
+}
+
+#testimonials {
+    display: flex;
+    width: 100%;
+    margin-top: 7vw;
+    gap: 2vw;
+    justify-content: center;
+}
+
+.testimonial-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+
+.testi1 {
+    height: 260px;
+    width: 340px;
+    background-color: white;
+    border-radius: 7px;
+}
+
+.pic {
+    height: 110px;
+    width: 110px;
+    background-color: crimson;
+    border-radius: 50%;
+    margin-top: -65px;
+    background-image: url('images/person_3.jpg');
+    background-size: cover;
+}
+
+.sigma {
+    text-align: justify;
+    line-height: 25px;
+    margin-top: 12px;
+    font-weight: 600;
+    color: rgb(147, 149, 151);
+}
+
+.name {
+    margin-top: 30px;
+    font-weight: 600;
+}
+
+.customer {
+    margin-top: 15px;
+    font-size: 12px;
+    color: rgb(253, 76, 130);
+    font-weight: 600;
+}
+
+.slider-controls {
+    display: flex;
+    font-size: 55px;
+    position: absolute;
+    bottom: 28%;
+    gap: 85vw;
+}
+
+/* page-Six starts here! */
+#sixth-page {
+    background-color: rgb(248, 249, 250);
+    width: 100%;
+    height: 165vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.pricing {
+    margin-top: 100px;
+    font-size: 12px;
+    color: rgb(253, 76, 130);
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+
+.heading {
+    margin-top: 20px;
+    font-size: 37px;
+    font-weight: 600;
+}
+
+#affordable-packages {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-top: 100px;
+}
+
+.package1 {
+    width: 18vw;
+    height: 120vh;
+    border-radius: 7px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 2.4vw;
+    align-items: center;
+}
+
+#package1-ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vw;
+}
+
+#package1-ul li {
+    list-style-type: none;
+}
+
+.get-started {
+    margin-top: 50px;
+    height: 60px;
+    width: 200px;
+    text-align: center;
+    background-color: rgb(253, 76, 130);
+    padding-top: 20px;
+    border-radius: 15px;
+    color: white;
+    font-size: 17px;
+}
+
+.get-started:hover {
+    cursor: pointer;
+}
+
+.figure {
+    background-color: crimson;
+    height: 220px;
+    width: 18vw;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    background-image: url('images/pricing-1.jpg');
+    background-size: cover;
+}
+
+.basic {
+    color: rgb(253, 76, 130);
+    font-weight: 600;
+}
+
+.dolor {
+    font-size: 60px;
+    font-weight: 600;
+    color: rgb(253, 76, 130);
+}
+
+.dolor span {
+    font-size: 33px;
+    color: #999999;
+}
+
+.dog span i {
+    margin-right: 15px;
+    font-weight: bolder;
+    color: rgb(253, 76, 130);
+}
+
+.dog {
+    height: 50px;
+    width: 200px;
+    background-color: rgb(248, 249, 250);
+    text-align: center;
+    padding-top: 15px;
+    letter-spacing: 1px;
+}
+
+.visit span i {
+    margin-right: 15px;
+    font-weight: bolder;
+    color: rgb(253, 76, 130);
+}
+
+.visit {
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.spa span i {
+    margin-right: 15px;
+    font-weight: bolder;
+    color: rgb(253, 76, 130);
+}
+
+.spa {
+    height: 50px;
+    width: 200px;
+    background-color: rgb(248, 249, 250);
+    text-align: center;
+    padding-top: 15px;
+    letter-spacing: 1px;
+}
+
+.free span i {
+    margin-right: 15px;
+    font-weight: bolder;
+    color: rgb(253, 76, 130);
+}
+
+.free {
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+/* Seventh page starts here! */
+#seventh-page {
+    background-color: rgb(248, 249, 250);
+    width: 100%;
+    height: 155vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.smheading {
+    margin-top: 123px;
+    font-size: 13px;
+    color: rgb(253, 76, 130);
+    font-weight: 600;
+}
+
+.lgheading {
+    margin-top: 20px;
+    color: black;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+#blogs {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    align-items: center;
+    margin-top: 120px;
+}
+
+.blog1 {
+    width: 24vw;
+    height: 82vh;
+    display: flex;
+    flex-direction: column;
+    gap: 1.3vw;
+    background-color: white;
+}
+
+.photo {
+    width: 24vw;
+    height: 40vh;
+    background-image: url('images/image_1.jpg');
+    background-size: cover;
+}
+
+.blog-content {
+    display: flex;
+    margin-left: 25px;
+    justify-content: space-evenly;
+}
+
+.left-side {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    font-size: 13px;
+    color: rgb(253, 76, 130);
+    word-spacing: 8px;
+    line-height: 22px;
+    margin-top: 1%;
+    font-weight: 500;
+}
+
+.left-side span {
+    margin-left: 37px;
+    font-size: 14px;
+}
+
+.a1:hover {
+    color: rgb(44, 42, 42);
+    cursor: pointer;
+}
+
+.a2:hover {
+    color: rgb(44, 42, 42);
+    cursor: pointer;
+
+}
+
+.a2 {
+    margin-top: 10px;
+    width: 70px;
+}
+
+.a1 {
+    margin-top: 10px;
+    width: 70px;
+}
+
+.a2 span {
+    margin-left: 28px;
+    font-size: 14px;
+}
+
+.righr-side {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+
+.mtext {
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.para {
+    color: rgb(147, 149, 151);
+    line-height: 29px;
+    font-weight: 600;
+    margin-top: 17px;
+}
+
+.button {
+    margin-top: 20px;
+    color: white;
+    padding: 12px 16px;
+    border-radius: 7px;
+    background-color: rgb(253, 76, 130);
+    width: 110px;
+    cursor: pointer;
+}
+
+/* eight-page starts here! */
+#eight-page {
+    background-color: rgb(224, 224, 224);
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#links {
+    width: 90%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.link1 {
+    width: 20vw;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+}
+
+.last-logo {
+    font-size: 24px;
+    color: black;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.last-logo p {
+    font-size: 13px;
+    color: rgb(253, 76, 130);
+    margin-left: 3px;
+    font-weight: normal;
+}
+
+.far5 {
+    font-size: 19px;
+    color: rgb(67, 67, 67);
+}
+
+#last-ul {
+    display: flex;
+    gap: 1vw;
+}
+
+#last-ul li {
+    list-style-type: none;
+    margin-top: 10px;
+    padding: 01vw 1vw;
+    background-color: rgb(253, 76, 130);
+    font-size: 16px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.heading-services {
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-left: 6px;
+}
+
+hr {
+    margin-top: 10px;
+    width: 16%;
+    height: 1%;
+    background-color: rgb(253, 76, 130);
+    border: none;
+    margin-left: 6px;
+}
+
+.asd {
+    margin-top: 20px;
+    width: 16%;
+    height: 5px;
+    background-color: rgb(253, 76, 130);
+    border: none;
+}
+
+.link2 {
+    width: 17vw;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+}
+
+#services-ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+}
+
+#services-ul li {
+    list-style: none;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+}
+
+#services-ul span:hover {
+    cursor: pointer;
+    color: rgb(253, 76, 130);
+}
+
+#services-ul li span {
+    margin-left: 8px;
+}
+
+#services-ul li i {
+    font-size: 26px;
+    color: rgb(253, 76, 130);
+}
+
+.link3 {
+    width: 17vw;
+    height: 400px;
+    gap: 1vw;
+}
+
+.link4 {
+    width: 20vw;
+    height: 400px;
+    gap: 1vw;
+    display: flex;
+    flex-direction: column;
+}
+
+/* footer stats here! */
+#footer{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    width:100%;
+    height:20vh;
+}
+.copyright{
+    color: white;
+    word-spacing: 3px;
+}
+.owner{
+    font-size: 19px;
+    margin-left: 10px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    letter-spacing:2px;
+}
+@media (max-width:500px) {
+    .social-accounts {
+        display: none;
+    }
+
+    #navbar-ul ul li {
+        display: none;
+    }
+
+    #content {
+        flex-wrap: wrap;
+        margin-left: 2vw;
+        margin-right: 2vw;
+    }
+
+    #services {
+        flex-wrap: wrap;
+        gap: 39px;
+    }
+
+    #navbar {
+        top: -43px;
+        width: 100%;
+        padding: 5vw 2vw;
+    }
+
+    .logo {
+        margin-left: 22px;
+    }
+
+    .menu i {
+        display: block;
+        margin-right: 30px;
+        font-size: 26px;
+    }
+
+    #content h1 {
+        font-size: 47px;
+        text-align: left;
+        margin-left: 4vw;
+        line-height: normal;
+    }
+
+    #content h1 span {
+        margin-left: -0.1vw;
+    }
+
+    #content p {
+        font-size: 16px;
+        text-align: left;
+        word-break: break-word;
+        line-break: loose;
+        width: 70%;
+        margin-left: 5vw;
+        margin-top: 5vw;
+        font-weight: normal;
+    }
+
+    #main {
+        background-size: cover;
+        background-position: 80% 20%;
+    }
+
+    #second-page {
+        background-size: cover;
+        background-position: center;
+    }
+
+    .buttons {
+        flex-direction: column;
+        justify-content: center;
+        width: 95%;
+        height: 150px;
+        gap: 4vw;
+        margin-top: 8vw;
+    }
+
+    .button1 {
+        font-size: 16px;
+        padding: 4.4vw 5vw;
+    }
+
+    .button2 {
+        font-size: 16px;
+        padding: 4.4vw 5vw;
+    }
+
+    #services {
+        width: 100%;
+        margin-top: 50vw;
+    }
+
+    .s1 {
+        text-align: left;
+        width: 100%;
+    }
+
+    .veterinary {
+        border-radius: 8px;
+        width: 93%;
+        padding: 5vw;
+        gap: 10vw;
+        height: 39vw;
+        position: relative;
+    }
+
+    .veterinary i {
+        font-size: 14vw;
+        margin-top: -45px;
+    }
+
+    .picture {
+        display: none;
+    }
+
+    .some-text {
+        margin-top: 120vh;
+        margin-left: 8vw;
+    }
+
+    .some-text p {
+        font-size: 10px;
+        word-spacing: 4px;
+    }
+
+    .some-text h1 {
+        font-size: 37px;
+        margin-top: 30px;
+    }
+
+    #second-page {
+        height: auto;
+    }
+
+    .second-page-text {
+        line-height: 20px;
+        font-size: 14px;
+        margin-top: 25px;
+    }
+
+    .second-page-ul {
+        margin-top: 13vw;
+        gap: 5vw;
+    }
+
+    #third-page {
+        height: 90vh;
+    }
+
+    #inputs {
+        flex-wrap: wrap;
+        width: 97%;
+    }
+
+    #inputs2 {
+        flex-wrap: wrap;
+        width: 97%;
+    }
+
+    #inputs input,
+    #inputs select {
+        max-width: 90%;
+        margin-top: 25px;
+        border: 1px solid black;
+        border-radius: 6px;
+        margin-left: 20px;
+    }
+
+    #inputs2 input {
+        max-width: 90%;
+        margin-top: 25px;
+        border: 1px solid black;
+        border-radius: 6px;
+        padding: auto;
+        margin-left: 20px;
+    }
+
+    .xyz {
+        margin-right: 30px;
+        margin-top: 24px;
+        height: 55px;
+        max-width: 100%;
+        margin-left: 25px;
+    }
+
+    #our-groomers {
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .cart {
+        margin-top: 132px;
+        width: 90%;
+        height: 250px;
+        gap: 20px;
+    }
+
+    .image {
+        height: 180px;
+        width: 180px;
+    }
+
+    h5 {
+        font-size: 14px;
+    }
+
+    #cart-ul li i {
+        padding: 6px 6px;
+    }
+
+    #fourth-page {
+        height:260vh;
+        gap: 3vw;
+        margin-top: 200px;
+        position: relative;
+    }
+
+    .smtext {
+        margin-top: 10%;
+    }
+
+    .lgtext {
+        margin-top: 5%;
+    }
+    #page-five{
+        height:150vh;
+    }
+    .h3{
+        font-size: 14px;
+    }
+    .h1{
+        font-size: 26px;
+        margin-top: 20px;
+    }
+    #testimonials{
+        flex-wrap: wrap;
+        gap:8vw;
+    }
+    .slider-controls{
+        display: none;
+    }
+    #sixth-page{
+        height:470vh;
+        position: relative;
+    }
+    .heading{
+        font-size:30px;
+    }
+    #affordable-packages{
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 9vw;
+    }
+    .package1{
+        width:85%;
+        height: 95vh;
+    }
+    .figure{
+        width:100%;
+    }
+    #package1-ul{
+        width:100%;
+    }
+    #package1-ul li{
+        width:80%;
+    }
+    #seventh-page{
+        height:320vh;
+        width:100%;
+        position: relative;
+    }
+    .smheading{
+        font-size:20px;
+    }
+    .lgheading{
+        font-size: 35px;
+    }
+    #blogs{
+        flex-wrap:wrap;
+        width:100%;
+        flex-direction: column;
+        align-items: center;
+        height:310vh;
+    }
+    .blog1{
+        width:90%;
+        height:72vh;
+    }
+    .photo{
+        width:100%;
+    }
+    #eight-page{
+        height: 250vh;
+        width:100%;
+    }
+    #links{
+        flex-wrap: wrap;
+        flex-direction: column;
+        width:100%;
+        align-items: flex-start;
+        margin-left: 30px;
+    }
+    .link1{
+        width:80%;
+        gap:6vw;
+        height:50vh;
+    }
+    .link4{
+        width:80%;
+        gap:6vw;
+        height:60vh;
+    }
+    #last-ul li{
+        padding: 5px 8px;
+        margin-left: 20px;
+    }
+    .copyright{
+        text-align:center;
+        font-size:15px;
+    }
+}
+
+@media (min-width: 501px) and (max-width: 600px) {
+    #navbar-ul ul li {
+        display: none;
+    }
+
+    .picture {
+        display: none;
+    }
+
+    .menu i {
+        display: block;
+    }
+
+    #content p {
+        font-size: 14px;
+        text-align: justify;
+        line-height: 20px;
+    }
+
+    .social-accounts {
+        display: none;
+    }
+
+    #content {
+        flex-wrap: wrap;
+        margin-left: 2vw;
+        margin-right: 2vw;
+    }
+
+    #services {
+        flex-wrap: wrap;
+        gap: 39px;
+    }
+
+    #navbar {
+        top: -43px;
+        width: 100%;
+        padding: 5vw 2vw;
+    }
+
+    .logo {
+        margin-left: 22px;
+    }
+
+    .menu i {
+        display: block;
+        margin-right: 30px;
+        font-size: 26px;
+    }
+
+    #content h1 {
+        font-size: 47px;
+        text-align: left;
+        margin-left: 4vw;
+        line-height: normal;
+    }
+
+    #content h1 span {
+        margin-left: -0.1vw;
+    }
+
+    #content p {
+        font-size: 16px;
+        text-align: left;
+        word-break: break-word;
+        line-break: loose;
+        width: 70%;
+        margin-left: 5vw;
+        margin-top: 5vw;
+        font-weight: normal;
+    }
+
+    #main {
+        background-size: cover;
+        background-position: 80% 20%;
+    }
+
+    #second-page {
+        background-size: cover;
+        background-position: center;
+    }
+
+    .buttons {
+        flex-direction: column;
+        justify-content: center;
+        width: 95%;
+        height: 150px;
+        gap: 4vw;
+        margin-top: 8vw;
+    }
+
+    .button1 {
+        font-size: 16px;
+        padding: 4.4vw 5vw;
+    }
+
+    .button2 {
+        font-size: 16px;
+        padding: 4.4vw 5vw;
+    }
+
+    #services {
+        width: 100%;
+        margin-top: 50vw;
+    }
+
+    .s1 {
+        text-align: left;
+        width: 100%;
+    }
+
+    .veterinary {
+        border-radius: 8px;
+        width: 93%;
+        padding: 5vw;
+        gap: 10vw;
+        height: 39vw;
+        position: relative;
+    }
+
+    .veterinary i {
+        font-size: 14vw;
+        margin-top: -45px;
+    }
+
+    .picture {
+        display: none;
+    }
+
+    .some-text {
+        margin-top: 170vh;
+        margin-left: 8vw;
+    }
+
+    .some-text p {
+        font-size: 10px;
+        word-spacing: 4px;
+    }
+
+    .some-text h1 {
+        font-size: 37px;
+        margin-top: 30px;
+    }
+
+    #second-page {
+        height: auto;
+    }
+
+    .second-page-text {
+        line-height: 20px;
+        font-size: 14px;
+        margin-top: 25px;
+    }
+
+    .second-page-ul {
+        margin-top: 13vw;
+        gap: 5vw;
+    }
+
+    #third-page {
+        height: 90vh;
+        background-size: cover;
+    }
+
+    #inputs {
+        flex-wrap: wrap;
+        width: 97%;
+    }
+
+    #inputs2 {
+        flex-wrap: wrap;
+        width: 97%;
+    }
+
+    #inputs input,
+    #inputs select {
+        max-width: 100%;
+        margin-top: 25px;
+        border: 1px solid black;
+        border-radius: 6px;
+        margin-left: 20px;
+    }
+
+    #inputs2 input {
+        max-width: 90%;
+        margin-top: 25px;
+        border: 1px solid black;
+        border-radius: 6px;
+        padding: auto;
+        margin-left: 20px;
+    }
+
+    .xyz {
+        margin-right: 30px;
+        margin-top: 24px;
+        height: 55px;
+        max-width: 100%;
+        margin-left: 25px;
+    }
+
+    #our-groomers {
+        flex-wrap: wrap;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .cart {
+        margin-top: 162px;
+        width: 500px;
+        height: 280px;
+        gap: 20px;
+    }
+
+    .image {
+        height: 230px;
+        width: 230px;
+    }
+
+    h5 {
+        font-size: 14px;
+    }
+
+    h3 {
+        font-size: 24px;
+    }
+
+    #cart-ul li i {
+        padding: 6px 6px;
+    }
+
+    #fourth-page {
+        height: auto;
+        gap: 3vw;
+        margin-top: 200px;
+        background-size: cover;
+        flex-direction: column;
+    }
+
+    .smtext {
+        margin-top: 10%;
+    }
+
+    .lgtext {
+        margin-top: 5%;
+    }
+}
+
+
+
+
+@media (min-width:600px) and (max-width:767px) {
+    #navbar-ul ul {
+        display: none;
+    }
+
+    .menu i {
+        display: block;
+    }
+
+    .picture {
+        display: none;
+    }
+
+    #content p {
+        text-align: justify;
+        line-height: 20px;
+    }
+
+    .social-accounts {
+        display: none;
+    }
+
+    #navbar-ul ul li {
+        display: none;
+    }
+
+    #content {
+        flex-wrap: wrap;
+        margin-left: 2vw;
+        margin-right: 2vw;
+    }
+
+    #services {
+        flex-wrap: wrap;
+        gap: 39px;
+    }
+
+    #navbar {
+        top: -43px;
+        width: 100%;
+        padding: 5vw 2vw;
+    }
+
+    .logo {
+       margin-left: 22px;
+    }
+
+    .menu i {
+        display: block;
+        margin-right: 30px;
+        font-size: 26px;
+    }
+
+    #content h1 {
+        font-size: 47px;
+        text-align: left;
+        margin-left: 4vw;
+        line-height: normal;
+    }
+
+    #content h1 span {
+        margin-left: -0.1vw;
+    }
+
+    #content p {
+        font-size: 16px;
+        text-align: left;
+        word-break: break-word;
+        line-break: loose;
+        width: 70%;
+        margin-left: 5vw;
+        margin-top: 5vw;
+        font-weight: normal;
+    }
+
+    #main {
+        background-size: cover;
+        background-position: 80% 20%;
+    }
+
+    #second-page {
+        background-size: cover;
+        background-position: center;
+    }
+
+    .buttons {
+        flex-direction: column;
+        justify-content: center;
+        width: 65%;
+        height: 150px;
+        gap: 4vw;
+        margin-top: 16vw;
+        margin-left: 100px;
+    }
+
+    .button1 {
+        font-size: 19px;
+        padding: 3.5vw 0vw;
+    }
+
+    .button2 {
+        font-size: 19px;
+        padding: 3.5vw 0vw;
+    }
+
+    #services {
+        width: 100%;
+        margin-top: 50vw;
+    }
+
+    .s1 {
+        text-align: left;
+        width: 100%;
+    }
+
+    .veterinary {
+        border-radius: 8px;
+        width: 85%;
+        gap: 10vw;
+        height: 29vw;
+        position: relative;
+    }
+
+    .veterinary i {
+        font-size: 14vw;
+        margin-top: -45px;
+    }
+
+    .picture {
+        display: none;
+    }
+
+    .some-text {
+        margin-top: 190vh;
+        margin-left: 8vw;
+    }
+
+    .some-text p {
+        font-size: 14px;
+        word-spacing: 4px;
+    }
+
+    .some-text h1 {
+        font-size: 37px;
+        margin-top: 30px;
+    }
+
+    #second-page {
+        height: auto;
+    }
+
+    .second-page-text {
+        line-height: 20px;
+        font-size: 14px;
+        margin-top: 25px;
+        text-align: justify;
+    }
+
+    .second-page-ul {
+        margin-top: 13vw;
+        gap: 5vw;
+    }
+
+    #third-page {
+        height: 90vh;
+        background-size: cover;
+    }
+
+    #inputs {
+        flex-wrap: wrap;
+        width: 97%;
+    }
+
+    #inputs2 {
+        flex-wrap: wrap;
+        width: 97%;
+    }
+
+    #inputs input,
+    #inputs select {
+        max-width: 100%;
+        margin-top: 25px;
+        border: 1px solid black;
+        border-radius: 6px;
+        margin-left: 20px;
+    }
+
+    #inputs2 input {
+        max-width: 90%;
+        margin-top: 25px;
+        border: 1px solid black;
+        border-radius: 6px;
+        padding: auto;
+        margin-left: 20px;
+    }
+
+    .xyz {
+        margin-right: 30px;
+        margin-top: 24px;
+        height: 55px;
+        max-width: 100%;
+        margin-left: 25px;
+    }
+
+    #our-groomers {
+        flex-wrap: wrap;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .cart {
+        margin-top: 162px;
+        width: 500px;
+        height: 280px;
+        gap: 20px;
+    }
+
+    .image {
+        height: 230px;
+        width: 230px;
+    }
+
+    h5 {
+        font-size: 14px;
+    }
+
+    h3 {
+        font-size: 24px;
+    }
+
+    #cart-ul li i {
+        padding: 6px 6px;
+    }
+
+    #fourth-page {
+        height: auto;
+        gap: 3vw;
+        margin-top: 200px;
+        background-size: cover;
+        flex-direction: column;
+    }
+
+    .smtext {
+        margin-top: 10%;
+    }
+
+    .lgtext {
+        margin-top: 5%;
+    }
+}
+
+@media (min-width:767px) and (max-width:993px) {
+    #navbar {
+        top: -44px;
+        width: 100%;
+        height: 90px;
+        align-items: center;
+    }
+
+    #navbar .logo {
+        margin-left: 30px;
+    }
+
+    #navbar-ul ul {
+        display: none;
+    }
+
+    .menu i {
+        display: block;
+        margin-right: 30px;
+        font-size: 26px;
+    }
+
+    .social-accounts {
+        display: none;
+    }
+
+    #content p {
+        text-align: justify;
+    }
+
+    .veterinary {
+        flex-wrap: nowrap;
+        width: 30%;
+        text-align: justify;
+        margin-top: 200px;
+    }
+
+    #fourth-page {
+        height: auto;
+    }
+
+    .picture {
+        background-size: cover;
+        margin-left: 7%;
+        width: 1400px;
+    }
+
+    .some-text h1 {
+        text-align: left;
+    }
+
+    #our-groomers {
+        gap: 6vw;
+        flex-wrap: wrap;
+        margin-top: 200px;
+    }
+
+    .cart {
+        width: 300px;
+        height: 370px;
+        gap: 4vw;
+        margin-top: 100px;
+    }
+
+    .image {
+        height: 240px;
+        width: 230px;
+    }
+}
